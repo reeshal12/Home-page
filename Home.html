@@ -1,0 +1,323 @@
+<!-- USING BOOTSTRAP CREATE AN ECOMMERCE HOME PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!--Navbar  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#" style="font-weight: bold;font-size: xx-large;color:purple">Cartiva</a>
+    <form class="d-flex" role="search" >
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Become a supplier</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Investor Relations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cart</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<!-- mega menu dropdown , create separate columns -->
+ <li class="nav-item dropdown position-static">
+  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+    Categories
+  </a>
+  <!-- Mega Menu Dropdown -->
+<div class="dropdown-menu w-100 mt-0 border-0 shadow">
+  <div class="container">
+    <div class="row py-4">
+
+      <div class="col-md">
+        <h6 class="fw-bold">Popular</h6>
+        <a class="dropdown-item" href="#">Kurti</a>
+        <a class="dropdown-item" href="#">Saree</a>
+        <a class="dropdown-item" href="#">Lehenga</a>
+      </div>
+
+      <div class="col-md">
+        <h6 class="fw-bold">Women</h6>
+        <a class="dropdown-item" href="#">Western Wear</a>
+        <a class="dropdown-item" href="#">Ethnic Wear</a>
+      </div>
+
+      <div class="col-md">
+        <h6 class="fw-bold">Men</h6>
+        <a class="dropdown-item" href="#">T-Shirts</a>
+        <a class="dropdown-item" href="#">Shirts</a>
+      </div>
+
+      <div class="col-md">
+        <h6 class="fw-bold">Kids</h6>
+        <a class="dropdown-item" href="#">Boys Clothing</a>
+        <a class="dropdown-item" href="#">Girls Clothing</a>
+      </div>
+
+      <div class="col-md">
+        <h6 class="fw-bold">Home & Kitchen</h6>
+        <a class="dropdown-item" href="#">Cookware</a>
+        <a class="dropdown-item" href="#">Home Decor</a>
+      </div>
+
+      <div class="col-md">
+        <h6 class="fw-bold">Jewellery & Accessories</h6>
+        <a class="dropdown-item" href="#">Earrings</a>
+        <a class="dropdown-item" href="#">Bags</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+</li>
+
+<!-- Carousel (banner) -->
+ 
+ <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner" style="height: 600px;object-fit: cover;">
+    <div class="carousel-item active">
+      <img src="https://www.shutterstock.com/image-vector/black-friday-sale-banner-shopping-260nw-2545954505.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+<!-- Card(Categories) -->
+ <div style="display: flex;justify-content:space-between;align-items: center;padding: 20px;flex-wrap: wrap;">
+ <div class="card" style="width: 18rem;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFP8zD8538P6WRw0boqMeOZyGC-uD5HAQ74A&s" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Western wear</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://82k.com.au/cdn/shop/files/kg-mens-shirt-cabarita1_600x.jpg?v=1726479944" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Shirts</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://www.shutterstock.com/image-photo/womens-luxury-handbag-bold-pink-600nw-2468394613.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Accessories</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://m.media-amazon.com/images/I/81SMC+jVtaL.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Home decor</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://images.stockcake.com/public/6/9/2/69275fe2-2814-4eb4-9243-2668edaf02b7/colorful-grocery-cart-stockcake.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Grocery</p>
+  </div>
+</div>
+</div>
+
+<!-- Marquee(movement) -->
+ <!-- Brand Marquee -->
+<div class="marquee-brands py-3 bg-light">
+  <div class="marquee-content d-flex align-items-center">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4y6msUjoQVD7GnWJo3gR9uEP84fdBxVEoog&s" alt="Xiaomi" class="mx-3" style="height:80px;padding: 10px;">
+    <img src="https://substackcdn.com/image/fetch/$s_!SHJn!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc7a5fbfb-bb7f-40f3-a179-21fead60b632_1000x1000.jpeg" alt="Bata" class="mx-3" style="height:80px;padding: 10px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQqIiLf-1zh6K-YzX0Y-QXyAz9GrclATxr1g&s" alt="Gucci" class="mx-3" style="height:80px;padding: 10px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3GmbdwiW6IBfXz_OlsxlmkIPJBGDliNX-ww&s" alt="Mamaearth" class="mx-3" style="height:60px;padding: 10px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0K-zlwmlCarRvrs5cfyHfZEnvzaCPj7YJ0g&s" alt="Wild Stone" class="mx-3" style="height:80px;padding: 10px;">
+    <img src="https://i.pinimg.com/736x/3d/c2/77/3dc277d9b7eae42cb4fbef1f05909e61.jpg" alt="Plum" class="mx-3" style="height:80px;padding: 10px;">
+    <img src="https://vectorseek.com/wp-content/uploads/2021/01/Nivea-Logo-Vector-300x300.jpg" alt="Nivea" class="mx-3" style="height:60px;padding: 10px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzcZh9VD_Hxd5loqoPDXnFC8gVVyZOhYvTVA&s" alt="Wow" class="mx-3" style="height:60px;padding: 10px;">
+    <img src="https://www.freepnglogos.com/uploads/chanel-logo-black-image-4.png" alt="Channel" class="mx-3" style="height:60px;padding: 10px;">
+    <img src="https://static.vecteezy.com/system/resources/previews/023/599/767/non_2x/dior-brand-logo-black-design-symbol-luxury-clothes-fashion-illustration-free-vector.jpg" alt="Dior" class="mx-3" style="height:60px;padding: 10px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-azS2owALUwAD_Zljf754iZRab2BzD8KWdA&s" alt="Adidas" class="mx-3" style="height:60px;padding: 10px;">
+  </div>
+</div>
+
+<style>
+  .marquee-brands {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marqueeBrands 20s linear infinite;
+  }
+
+  .marquee-content:hover {
+    animation-play-state: paused; /* stops scrolling on hover */
+  }
+
+  @keyframes marqueeBrands {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .marquee-brands img {
+    display: inline-block;
+    max-height: 60px; /* adjust size */
+  }
+</style>
+
+
+<h1>Products For You</h1>
+<!--Card(products) -->
+<div style="display: flex;justify-content:space-between;align-items: center;padding: 20px;flex-wrap: wrap;">
+<div class="card" style="width: 18rem;">
+  <img src="https://5.imimg.com/data5/SELLER/Default/2022/1/SN/VG/HA/144903154/silicone-rubber-phone-cases-500x500.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">other Cases & Covers</p>
+    <h5 class="card-title">₹302</h5>
+    <p class="card-text">Free Delivery</p>
+    <a href="#" class="btn btn-primary">4.1 ★</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwrNCWOzaDtLrxK5G9PxNoSxhKcttt0z3UyQ&s" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Earmuffs</p>
+    <h5 class="card-title">₹327</h5>
+    <p class="card-text">Free Delivery</p>
+    <a href="#" class="btn btn-primary">3.8 ★</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://images-static.nykaa.com/media/catalog/product/4/b/4bb8800607710102248_2.jpg?tr=w-500" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Unique lipsticks</p>
+    <h5 class="card-title">₹138</h5>
+    <p class="card-text">Free Delivery</p>
+    <a href="#" class="btn btn-primary">4.1 ★</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://mobilla.in/cdn/shop/collections/Mbuds-1_533x.jpg?v=1691826572" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Wireless headsets</p>
+    <h5 class="card-title">₹270</h5>
+    <p class="card-text">Free Delivery</p>
+    <a href="#" class="btn btn-primary">4.0 ★</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://www.deepam.com/cdn/shop/articles/D030480_750x_9378901b-35b3-4350-bd7b-02a61f9d3086.webp?v=1675839966" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Voguish Sarees</p>
+    <h5 class="card-title">₹336</h5>
+    <p class="card-text">Free Delivery</p>
+    <a href="#" class="btn btn-primary">4.0 ★</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;margin-top: 20px;">
+  <img src="https://m.media-amazon.com/images/I/71RlCi6lv3L._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Women's Printed Slippers</p>
+    <h5 class="card-title">₹134</h5>
+    <p class="card-text">Free Delivery</p>
+    <a href="#" class="btn btn-primary">4.1 ★</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;margin-top: 20px;">
+  <img src="https://www.unboxify.in/cdn/shop/products/61_btxzpfDL._SX679__1_184ff19e-ae93-40da-8715-40c1a9d13ea6.jpg?height=645&pad_color=fff&v=1694963763&width=645" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Bluetooth Headphones</p>
+    <h5 class="card-title">₹999</h5>
+    <p class="card-text">Free Delivery</p>
+    <a href="#" class="btn btn-primary">4.0 ★</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;margin-top: 20px;">
+  <img src="https://punerigifts.in/wp-content/webp-express/webp-images/uploads/2024/11/personalized_men_wallet_vegan_leather_blue1.jpg.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Men's Fancy Wallets</p>
+    <h5 class="card-title">₹164</h5>
+    <p class="card-text">Free Delivery</p>
+    <a href="#" class="btn btn-primary">4.2 ★</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;margin-top: 20px;">
+  <img src="https://m.media-amazon.com/images/I/71loIUtSjWL._AC_UY1100_.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Feminine Sweatshirts</p>
+    <h5 class="card-title">₹293</h5>
+    <p class="card-text">Free Delivery</p>
+    <a href="#" class="btn btn-primary">4.3 ★</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;margin-top: 20px;">
+  <img src="https://m.media-amazon.com/images/I/61-0Kroh94L._AC_UY1000_.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Analog Watches</p>
+    <h5 class="card-title">₹220</h5>
+    <p class="card-text">Free Delivery</p>
+    <a href="#" class="btn btn-primary">3.8 ★</a>
+  </div>
+</div>
+</div>
+
+<!-- Footer(contacts etc..) -->
+ <div style="background-color: lightgrey;">
+ <div class="container text-center text-md-start mt-5">
+  <div class="row">
+
+    <div class="col-md-3 col-12 mb-4">
+      <h6 class="fw-bold" style="margin-top: 20px;">Shop Non-Stop on Meesho</h6>
+      <p class="text-muted">
+        Trusted by crores of Indians <br>
+        Cash on Delivery | Free Delivery
+      </p>
+    </div>
+
+    <div class="col-md-2 col-6 mb-4">
+      <h6 class="fw-bold" style="margin-top: 20px;">Careers</h6>
+      <p class="text-muted mb-1">Become a supplier</p>
+      <p class="text-muted mb-1">Hall of Fame</p>
+      <p class="text-muted">Sitemap</p>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+      <h6 class="fw-bold" style="margin-top: 20px;">Legal and Policies</h6>
+      <p class="text-muted mb-1">Meesho Tech Blog</p>
+      <p class="text-muted">Notices and Returns</p>
+    </div>
+
+    <div class="col-md-2 col-6 mb-4">
+      <h6 class="fw-bold" style="margin-top: 20px;">Contact Us</h6>
+      <p class="text-muted small">
+        Cartiva Pvt Ltd <br>
+        Manglore, Karnataka
+      </p>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
